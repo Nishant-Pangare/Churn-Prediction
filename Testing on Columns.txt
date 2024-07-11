@@ -1,0 +1,29 @@
+Input Columns for Testing:
+
+From the Customer Table:
+id
+createdAt
+updatedAt
+userId
+
+From the Sales_Invoice Table:
+orderId
+invoiceType
+packStatus
+paymentStatus
+invoiceDate
+totalBillAmount
+billGstAmount
+paymentsType
+supplyType
+
+Output:
+For each customer, you would display:
+
+Customer ID (from the Customer Table)
+Churn prediction (either "Churn" or "Not churn" based on the model's predicted probability threshold)
+After obtaining the churn probability for each customer using the testing data, you can apply 
+a threshold to classify them as churners or non-churners. 
+For example, if the churn probability is above 0.5, you classify the customer as a churner; 
+otherwise, you classify them as a non-churner. 
+This threshold can be adjusted based on the specific requirements and performance of the model.
